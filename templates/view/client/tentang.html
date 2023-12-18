@@ -1,0 +1,105 @@
+{% extends "layout/client/layout.html" %} {% block content %}
+
+<section class="tentang">
+  <div
+    class="container d-flex flex-column justify-content-center align-items-center min-vh-100 gap-4 my-2 rounded-4"
+    style="color: white; background-color: #11009e"
+  >
+    <img
+      class="img-fluid w-25 w-md-50 py-2"
+      src="{{ url_for('static', filename='img/img_tentang/AksiKita Logo.png') }}"
+      alt="AksiKita"
+    />
+
+    <p class="text-center w-75">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda enim
+      totam quam quo reprehenderit, ex quae repudiandae pariatur provident error
+      quod iure ratione soluta sunt nihil et corporis minus cum deleniti quos
+      aliquid eius, dolores laudantium. Molestias amet dolore voluptates!
+    </p>
+  </div>
+</section>
+
+<section class="visi-misi">
+  <div class="container d-flex flex-column mt-5 pt-5">
+    <div class="row gy-2">
+      <div
+        class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center"
+      >
+        <h1 class="fs-1 fw-bold text-center">Visi</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          enim totam quam quo reprehenderit, ex quae repudiandae pariatur
+          provident error quod iure ratione soluta sunt nihil et corporis minus
+          cum deleniti quos aliquid eius, dolores laudantium. Molestias amet
+          dolore voluptates!
+        </p>
+      </div>
+      <div
+        class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center"
+      >
+        <h1 class="fs-1 fw-bold text-center">Misi</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          enim totam quam quo reprehenderit, ex quae repudiandae pariatur
+          provident error quod iure ratione soluta sunt nihil et corporis minus
+          cum deleniti quos aliquid eius, dolores laudantium. Molestias amet
+          dolore voluptates!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="kontributor py-5 mb-5">
+  <div
+    class="container d-flex flex-column justify-content-center align-items-center"
+  >
+    <h1 class="fs-1 fw-bold text-center pb-4">Kontributor</h1>
+    <div class="row gy-2">
+      <div
+        class="col-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center"
+      >
+        <div class="card shadow">
+          <img
+            src="{{ url_for('static', filename='img/img_kontributor/person.jpg') }}"
+            class="card-img-top"
+            alt="person"
+          />
+          <div class="card-body">
+            <p class="card-text text-center">Person 1</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center"
+      >
+        <div class="card shadow">
+          <img
+            src="{{ url_for('static', filename='img/img_kontributor/person.jpg') }}"
+            class="card-img-top"
+            alt="person"
+          />
+          <div class="card-body">
+            <p class="card-text text-center">Person 2</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center"
+      >
+        <div class="card shadow">
+          <img
+            src="{{ url_for('static', filename='img/img_kontributor/person.jpg') }}"
+            class="card-img-top"
+            alt="person"
+          />
+          <div class="card-body">
+            <p class="card-text text-center">Person 3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
