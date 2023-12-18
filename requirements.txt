@@ -1,5 +1,5 @@
 Flask
-Flask_Bcrypt
+Flask_Bcrypt==1.0.1
 Flask_Login
 pymongo
 python-dotenv
